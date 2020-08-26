@@ -9,9 +9,13 @@ phases:
     commands:
       - echo Building...
       - mvn clean package
+
   post_build:
     commands:
       - mv target/*.jar ./    
 artifacts:
   files:
     - ./**/*.jar
+test:
+    commands:
+     - run target/test-classes/com/example/demo/UnitTestCase.java
