@@ -24,7 +24,7 @@ import com.example.demo.web.TxrController;
 
 @WebMvcTest (value = TxrController.class)
 @WithMockUser
-public class TxrControllerTest {
+public class TxrControllerTestcase {
 
 	@InjectMocks
 	private TxrController txrController;
